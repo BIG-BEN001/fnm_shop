@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-<<<<<<< HEAD
 // Route::get('/ipay', [App\Http\Controllers\HomeController::class, 'ipay']);
 Route::post('/ipay', [App\Http\Controllers\HomeController::class, 'ipay_post']);
 // Route::get('/ipay_callback', [App\Http\Controllers\HomeController::class, 'ipay_callback']);
@@ -29,7 +28,6 @@ Route::get('lang/{locale}', [App\Http\Controllers\LocalizationController::class,
 
 
 
-=======
 Route::get('/mail_test', [App\Http\Controllers\HomeController::class, 'mail_test']);
 Route::get('/ipay', [App\Http\Controllers\HomeController::class, 'ipay']);
 Route::post('/ipay', [App\Http\Controllers\HomeController::class, 'ipay_post']);
@@ -39,7 +37,6 @@ Auth::routes();
 
 Route::get('lang/{locale}', [App\Http\Controllers\LocalizationController::class, 'index']);
 
->>>>>>> da708e9 (updated on ipay)
 //Home
 Route::get('/', [App\Http\Controllers\Frontend\HomeFrontendController::class, 'homePageLoad'])->name('frontend.home');
 
@@ -107,10 +104,6 @@ Route::post('/frontend/make_order', [App\Http\Controllers\Frontend\CheckoutFront
 Route::get('/thank', [App\Http\Controllers\Frontend\CheckoutFrontController::class, 'LoadThank'])->name('frontend.thank');
 Route::get('/paypal-payment-status', [App\Http\Controllers\Frontend\CheckoutFrontController::class, 'getPaypalPaymentStatus'])->name('frontend.paypal-payment-status');
 Route::get('/ipay_callback', [App\Http\Controllers\Frontend\CheckoutFrontController::class, 'ipay_callback']);
-<<<<<<< HEAD
-=======
-
->>>>>>> da708e9 (updated on ipay)
 //Order Tracking
 Route::get('/order-tracking', [App\Http\Controllers\Frontend\OrderTrackingController::class, 'getOrderTracking'])->name('frontend.order-tracking');
 
@@ -600,10 +593,5 @@ Route::prefix('seller')->group(function(){
 	Route::post('/getStatusList', [App\Http\Controllers\Backend\ComboController::class, 'getStatusList'])->name('seller.getStatusList')->middleware(['auth','is_seller']);
 	Route::post('/getCategoryList', [App\Http\Controllers\Backend\ComboController::class, 'getCategoryList'])->name('seller.getCategoryList')->middleware(['auth','is_seller']);
 	Route::post('/getBrandList', [App\Http\Controllers\Backend\ComboController::class, 'getBrandList'])->name('seller.getBrandList')->middleware(['auth','is_seller']);
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> da708e9 (updated on ipay)
 });
 
