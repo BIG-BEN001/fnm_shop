@@ -35,8 +35,11 @@ class PageController extends Controller
 		
         return view('frontend.page', compact('data'));
     }
+<<<<<<< HEAD
 
 	public function pesatel(){
 		return view('frontend.pesatel');
 	}
+=======
+>>>>>>> da708e9 (updated on ipay)
 }

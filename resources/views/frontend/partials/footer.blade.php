@@ -10,7 +10,11 @@
 					 Experience the Luxury of quality, tailor made and original designs at Unbeatable prices.</p>
 				
 				<p>Fashion is a language and we speak it Flawlessly with our Edgy, trendy and Exclusive designs. 
+<<<<<<< HEAD
 					We design and tailor make all our items from scratch in Nairobi, Kenya so when we say Exclusive.... we mean Exclusive. You deserve the best and We are the Best.</p>
+=======
+					We design and tailor make all our items from scratch in Nairobi, Kenya so when we say Exclusive... we mean Exclusive. You deserve the best and We are the Best.</p>
+>>>>>>> da708e9 (updated on ipay)
 						
 				<p><b>Fashionistas Welcome to your happy place.</b></p>
 
@@ -22,10 +26,17 @@
 						<div class="footer-widget">
 							<ul class="widget-list">
 								<li>
+<<<<<<< HEAD
 									<a class="text-uppercase mb-1" href="#!">Dresses</a>
 								</li>
 								<li>
 									<a class="text-uppercase mb-1" href="#!">Kimonos</a>
+=======
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/51/dresses">Dresses</a>
+								</li>
+								<li>
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/54/kimonos">Kimonos</a>
+>>>>>>> da708e9 (updated on ipay)
 								</li>
 								<li>
 									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/52/blouses">Blouses</a>
@@ -40,13 +51,21 @@
 						<div class="footer-widget">
 							<ul class="widget-list">
 								<li>
+<<<<<<< HEAD
 									<a class="text-uppercase mb-1" href="#!">Palazzo Pants</a>
+=======
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/55/palazzo-pants">Palazzo Pants</a>
+>>>>>>> da708e9 (updated on ipay)
 								</li>
 								<li>
 									<a class="text-uppercase mb-1" href="#!">Two Piece Outfits</a>
 								</li>
 								<li>
+<<<<<<< HEAD
 									<a class="text-uppercase mb-1" href="#!">Skirts</a>
+=======
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/53/skirts">Skirts</a>
+>>>>>>> da708e9 (updated on ipay)
 								</li>
 								
 							</ul>
@@ -57,13 +76,21 @@
 						<div class="footer-widget">
 							<ul class="widget-list">
 								<li>
+<<<<<<< HEAD
 									<a class="text-uppercase mb-1" href="#!">Shirt Dresses</a>
+=======
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/56/shirt-dresses">Shirt Dresses</a>
+>>>>>>> da708e9 (updated on ipay)
 								</li>
 								<li>
 									<a class="text-uppercase mb-1" href="#!">Gift Cards</a>
 								</li>
 								<li>
+<<<<<<< HEAD
 									<a class="text-uppercase mb-1" href="#!">Jumpsuits</a>
+=======
+									<a class="text-uppercase mb-1" href="http://shop.fikasystems.com/product-category/57/jumpsuits">Jumpsuits</a>
+>>>>>>> da708e9 (updated on ipay)
 								</li>
 							
 								</li>
@@ -197,7 +224,11 @@
 						@if($gtext['is_publish_payment'] == 1)
 						<div class="payment-method">
 							@if($gtext['payment_gateway_icon'] != '')
+<<<<<<< HEAD
 							<img src="{{ asset('media/'.$gtext['payment_gateway_icon']) }}" alt="" />
+=======
+							<img src="{{ asset('public/media/'.$gtext['payment_gateway_icon']) }}" alt="" />
+>>>>>>> da708e9 (updated on ipay)
 							@endif
 						</div>
 						@endif

@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 // require_once 'resources/lang/custom/locales.php';
 require_once(realpath(dirname(__FILE__) . '/../resources/lang/custom/locales.php'));
+=======
+require_once 'resources/lang/custom/locales.php';
+
+>>>>>>> da708e9 (updated on ipay)
 return [
 
     /*
@@ -168,7 +173,11 @@ return [
 		Yajra\DataTables\DataTablesServiceProvider::class,
 		Intervention\Image\ImageServiceProvider::class,
 		Elibyy\TCPDF\ServiceProvider::class,
+<<<<<<< HEAD
         Zorb\IPay\IPayServiceProvider::class,
+=======
+		
+>>>>>>> da708e9 (updated on ipay)
         /*
          * Package Service Providers...
          */

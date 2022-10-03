@@ -17,7 +17,10 @@
         "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "postcss": "^8.1.14",
+<<<<<<< HEAD
         "resolve-url-loader": "^5.0.0",
+=======
+>>>>>>> da708e9 (updated on ipay)
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0"
     }

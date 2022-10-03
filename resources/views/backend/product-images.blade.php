@@ -81,6 +81,11 @@ var product_id = "{{ $datalist['id'] }}";
 var TEXT = [];
 	TEXT['Do you really want to delete this record'] = "{{ __('Do you really want to delete this record') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/product_images.js')}}"></script>
 <script src="{{asset('backend/pages/global-media.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/product_images.js')}}"></script>
+<script src="{{asset('public/backend/pages/global-media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

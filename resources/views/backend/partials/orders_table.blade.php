@@ -42,9 +42,16 @@
 				<td class="text-left">{{ __('Guest User') }}</td>
 				@endif
 				
+<<<<<<< HEAD
 				{{-- <td class="text-left">{{ $row->shop_name }}</td> --}}
 				<td class="text-left">{{ $row->payment_channel }}</td>
 				<td class="text-left">{{ $row->transaction_no }}</td>
+=======
+						{{-- <td class="text-left">{{ $row->shop_name }}</td> --}}
+				<td class="text-left">{{ $row->payment_channel }}</td>
+				<td class="text-left">{{ $row->transaction_no }}</td>
+				
+>>>>>>> da708e9 (updated on ipay)
 				@if($gtext['currency_position'] == 'left')
 				<td class="text-center">{{ $gtext['currency_icon'] }}{{ number_format($sub_total, 2) }}</td>
 				@else

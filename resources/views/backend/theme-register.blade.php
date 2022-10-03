@@ -32,5 +32,9 @@ var TEXT = [];
 	TEXT['Do you really want to deregister the theme'] = "{{ __('Do you really want to deregister the theme') }}";
 	TEXT['Please fill out required field'] = "{{ __('Please fill out required field') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/theme-register.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/theme-register.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

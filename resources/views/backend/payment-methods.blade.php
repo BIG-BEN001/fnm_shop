@@ -282,7 +282,10 @@
 									</form>
 								</div>
 								<!--/Razorpay Form-->
+<<<<<<< HEAD
 								
+=======
+>>>>>>> da708e9 (updated on ipay)
 
 								<!--/Mollie Form-->
 								<div id="form-panel-6" class="dnone">
@@ -404,5 +407,9 @@
 var TEXT = [];
 	TEXT['Do you really want to edit this record'] = "{{ __('Do you really want to edit this record') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/payment-gateway.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/payment-gateway.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

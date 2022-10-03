@@ -224,7 +224,13 @@ var TEXT = [];
 	TEXT['Sorry only you can upload jpg, png and gif file type'] = "{{ __('Sorry only you can upload jpg, png and gif file type') }}";
 
 </script>
+<<<<<<< HEAD
 <link href="{{asset('backend/editor/summernote-lite.min.css')}}" rel="stylesheet">
 <script src="{{asset('backend/editor/summernote-lite.min.js')}}"></script>
 <script src="{{asset('backend/pages/product_seller.js')}}"></script>
+=======
+<link href="{{asset('public/backend/editor/summernote-lite.min.css')}}" rel="stylesheet">
+<script src="{{asset('public/backend/editor/summernote-lite.min.js')}}"></script>
+<script src="{{asset('public/backend/pages/product_seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

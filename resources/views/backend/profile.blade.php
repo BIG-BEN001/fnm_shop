@@ -100,6 +100,11 @@
 <script type="text/javascript">
 var media_type = 'Thumbnail';
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/profile.js')}}"></script>
 <script src="{{asset('backend/pages/global-media.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/profile.js')}}"></script>
+<script src="{{asset('public/backend/pages/global-media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

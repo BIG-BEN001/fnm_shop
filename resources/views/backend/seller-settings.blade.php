@@ -74,5 +74,9 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/seller-settings.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/seller-settings.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

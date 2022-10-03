@@ -11,7 +11,11 @@
 	<meta property="og:description" content="{{ $gtext['og_description'] }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ url()->current() }}" />
+<<<<<<< HEAD
 	<meta property="og:image" content="{{ asset('media/'.$gtext['og_image']) }}" />
+=======
+	<meta property="og:image" content="{{ asset('public/media/'.$gtext['og_image']) }}" />
+>>>>>>> da708e9 (updated on ipay)
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -25,7 +29,11 @@
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $gtext['og_title'] }}">
 	<meta name="twitter:description" content="{{ $gtext['og_description'] }}">
+<<<<<<< HEAD
 	<meta name="twitter:image" content="{{ asset('media/'.$gtext['og_image']) }}">
+=======
+	<meta name="twitter:image" content="{{ asset('public/media/'.$gtext['og_image']) }}">
+>>>>>>> da708e9 (updated on ipay)
 @endsection
 
 @section('header')
@@ -39,14 +47,22 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="page-title">
+<<<<<<< HEAD
 						<h1>{{ __('Thank') }}</h1>
+=======
+						<h1>{{ __('Thank You!') }}</h1>
+>>>>>>> da708e9 (updated on ipay)
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="{{ url('/') }}">{{ __('Home') }}</a></li>
+<<<<<<< HEAD
 							<li class="breadcrumb-item active" aria-current="page">{{ __('Thank') }}</li>
+=======
+							<li class="breadcrumb-item active" aria-current="page">{{ __('Thank you') }}</li>
+>>>>>>> da708e9 (updated on ipay)
 						</ol>
 					</nav>
 				</div>

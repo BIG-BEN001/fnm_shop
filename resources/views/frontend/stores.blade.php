@@ -11,7 +11,11 @@
 	<meta property="og:description" content="{{ $gtext['og_description'] }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ url()->current() }}" />
+<<<<<<< HEAD
 	<meta property="og:image" content="{{ asset('media/'.$gtext['og_image']) }}" />
+=======
+	<meta property="og:image" content="{{ asset('public/media/'.$gtext['og_image']) }}" />
+>>>>>>> da708e9 (updated on ipay)
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -25,7 +29,11 @@
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $gtext['og_title'] }}">
 	<meta name="twitter:description" content="{{ $gtext['og_description'] }}">
+<<<<<<< HEAD
 	<meta name="twitter:image" content="{{ asset('media/'.$gtext['og_image']) }}">
+=======
+	<meta name="twitter:image" content="{{ asset('public/media/'.$gtext['og_image']) }}">
+>>>>>>> da708e9 (updated on ipay)
 @endsection
 
 @section('header')
@@ -65,7 +73,11 @@
 							@if($seller_data->photo == '')
 							<span class="text">{{ sub_str($seller_data->shop_name, 0,1) }}</span>
 							@else
+<<<<<<< HEAD
 							<img src="{{ asset('media/'.$seller_data->photo) }}" alt="{{ $seller_data->shop_name }}"/>
+=======
+							<img src="{{ asset('public/media/'.$seller_data->photo) }}" alt="{{ $seller_data->shop_name }}"/>
+>>>>>>> da708e9 (updated on ipay)
 							@endif
 							
 						</div>
@@ -118,7 +130,11 @@
 									  @endforeach
 									</ul>
 									@endif
+<<<<<<< HEAD
 									<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
+=======
+									<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('public/media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
+>>>>>>> da708e9 (updated on ipay)
 								</div>
 								<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
 								<div class="brand-card">

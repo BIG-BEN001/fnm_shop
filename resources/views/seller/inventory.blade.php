@@ -86,5 +86,9 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/inventory_seller.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/inventory_seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

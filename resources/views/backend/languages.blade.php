@@ -122,5 +122,9 @@ var TEXT = [];
 	TEXT['Enable'] = "{{ __('Enable') }}";
 	TEXT['Disable'] = "{{ __('Disable') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/languages.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/languages.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

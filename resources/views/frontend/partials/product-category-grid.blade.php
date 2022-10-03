@@ -27,6 +27,7 @@
 				  @endforeach
 				</ul>
 				@endif
+<<<<<<< HEAD
 				<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
 			</div>
 			<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
@@ -38,6 +39,19 @@
 					<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>
 				</div>
 			</div> --}}
+=======
+				<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('public/media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
+			</div>
+			<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
+			<!--<div class="brand-card">-->
+			<!--	<div class="brand">-->
+			<!--		<span>{{ __('Brand') }} <a href="{{ route('frontend.brand', [$row->brand_id, str_slug($row->brandname)]) }}">{{ str_limit($row->brandname) }}</a></span>-->
+			<!--	</div>-->
+			<!--	<div class="brand">-->
+			<!--		<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>-->
+			<!--	</div>-->
+			<!--</div>-->
+>>>>>>> da708e9 (updated on ipay)
 			<div class="item-price-card">
 				@if($row->sale_price != '')
 					@if($gtext['currency_position'] == 'left')

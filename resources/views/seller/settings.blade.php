@@ -224,5 +224,9 @@ var TEXT = [];
 	TEXT['Active'] = "{{ __('Active') }}";
 	TEXT['Inactive'] = "{{ __('Inactive') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/settings-seller.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/settings-seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

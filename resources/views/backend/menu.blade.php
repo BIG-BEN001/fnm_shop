@@ -102,5 +102,9 @@ var TEXT = [];
 	TEXT['Please select action'] = "{{ __('Please select action') }}";
 	TEXT['Please select record'] = "{{ __('Please select record') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/menu.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/menu.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

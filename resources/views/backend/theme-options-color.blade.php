@@ -72,7 +72,13 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{asset('backend/bootstrap-colorpicker/bootstrap-colorpicker.min.css')}}">
 <script src="{{asset('backend/bootstrap-colorpicker/bootstrap-colorpicker.min.js')}}"></script>
 <script src="{{asset('backend/pages/theme_option_color.js')}}"></script>
+=======
+<link rel="stylesheet" href="{{asset('public/backend/bootstrap-colorpicker/bootstrap-colorpicker.min.css')}}">
+<script src="{{asset('public/backend/bootstrap-colorpicker/bootstrap-colorpicker.min.js')}}"></script>
+<script src="{{asset('public/backend/pages/theme_option_color.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

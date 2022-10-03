@@ -67,10 +67,17 @@
 		width: 100%;
 	}
 	.home-slider .slider-item {
+<<<<<<< HEAD
 		height: auto;	
 	}
 	.home-slider .slider-item img {
 		height: auto;	
+=======
+		height: 400px;	
+	}
+	.home-slider .slider-item img {
+		height: 400px;	
+>>>>>>> da708e9 (updated on ipay)
 	}
 	.caro-common .owl-nav button {
 		left: 12px;
@@ -308,6 +315,45 @@
 
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+<<<<<<< HEAD
+=======
+    .item-card {
+        position: relative;
+        background: #fff;
+        width: 200px !important;
+        height: 200px !important;
+        padding: 15px 15px;
+        display: inline-block;
+        align-items: center;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .item-card .item-image {
+        width: 200px !important;
+        height: 200px !important;
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: flex;
+        /* align-content: stretch;
+        align-items: stretch; */
+        flex-grow: 1;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .item-card .item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover !important;
+    }
+    
+>>>>>>> da708e9 (updated on ipay)
 	.top-contact {
 		display: none;
 	}

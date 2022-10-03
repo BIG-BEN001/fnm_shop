@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use App\Models\User;
@@ -17,6 +18,17 @@ use PHPMailer\PHPMailer\Exception;
 use URL;
 use Input;
 
+=======
+use Redirect;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+// require '/home/fikasyst/public_html/bshop/vendor/phpmailer2/vendor/autoload.php';
+// require '/home/fikasyst/public_html/bshop/vendor/phpmailer2/vendor/autoload.php';
+require '/home/fikasyst/public_html/bshop/vendor/phpmailer2/vendor/phpmailer/phpmailer/src/Exception.php';
+require '/home/fikasyst/public_html/bshop/vendor/phpmailer2/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require '/home/fikasyst/public_html/bshop/vendor/phpmailer2/vendor/phpmailer/phpmailer/src/SMTP.php';
+>>>>>>> da708e9 (updated on ipay)
 class HomeController extends Controller
 {
     /**
@@ -38,16 +50,70 @@ class HomeController extends Controller
     {
         return view('home');
     }
+<<<<<<< HEAD
 
     public function ipay()
     {
         return view('ipay');
     }
 
+=======
+    
+    public function about()
+    {
+        return view('frontend.about');
+    }
+	
+    public function notFoundPage()
+    {
+        return view('backend.notfound');
+    }	
+    
+        public function ipay()
+    {
+        return view('ipay');
+    }
+    
+    public function mail_test()
+    {
+            //Load Composer's autoloader
+
+    $mail = new PHPMailer();
+        //Server settings
+               $mail->SMTPDebug = 4;                      
+        // $mail->isSMTP();    
+        $mail->Mailer = 'smtp';                                        
+        $mail->Host = 'mail.fikasystems.com';                    
+        $mail->SMTPAuth   = false;  
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );                                 
+        $mail->Username = 'bochieng@fikasystems.com';
+        $mail->Password = 'Sh@2@m#1397';
+        // $mail->SMTPAutoTLS = false;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465; 
+        
+        //Recipients
+        $mail->setFrom('bochieng@fikasystems.com','Fika Systems');
+        $mail->addAddress('benjaminochieng99@gmail.com');     //Add a recipient
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Email Verification';
+        $mail->Body    = '<h3>Click the link below to verify your email</h3>';
+        $mail->send();
+    }
+    
+>>>>>>> da708e9 (updated on ipay)
     public function ipay_post(Request $request)
     {
         // return view('ipay');
         // dd($request->all());
+<<<<<<< HEAD
 
         $res = array();
 		$gtext = gtext();
@@ -57,18 +123,29 @@ class HomeController extends Controller
 
         $this->validate($request,[
             'email'=>'required|email',
+=======
+         $this->validate($request,[
+            'email'=>'required',
+>>>>>>> da708e9 (updated on ipay)
             'phone'=>'required',
             'city'=>'required',
             'shipping_method'=>'required',
          ]);
         $generated_hash = "";
 		$fields = array();
+<<<<<<< HEAD
         $i = 1;
         $random_code = random_int(100000, 999999);
 		$order_no = 'ORD-'.$random_code.$i;
 
 			$fields = array(
 				"live"=> "0",
+=======
+		
+
+			$fields = array(
+				"live"=> "1",
+>>>>>>> da708e9 (updated on ipay)
 				"oid"=> "demo1",
 				"inv"=> "123456789",
 				"ttl"=> "1",
@@ -80,7 +157,11 @@ class HomeController extends Controller
 				"p2"=> "",
 				"p3"=> "",
 				"p4"=> "",                        
+<<<<<<< HEAD
 				"cbk"=> "http://shop.fikasystems.com/ipay_callback",     
+=======
+				"cbk"=> "http://shop.fikasystems.com/ipay_callback",      
+>>>>>>> da708e9 (updated on ipay)
 				"cst"=> "1",
 				"crl"=> "2",
 				"autopay" => "0"           
@@ -96,6 +177,7 @@ class HomeController extends Controller
 
 		
     }
+<<<<<<< HEAD
 
     public function ipay_callback(Request $request)
     {
@@ -117,4 +199,13 @@ class HomeController extends Controller
     public function pesatel(){
 		return view('frontend.pesatel');
 	}
+=======
+    
+    public function ipay_callback(Request $request)
+    {
+        // dd($request->all());
+        return Redirect::to('/thank');
+        // return view('ipay');
+    }
+>>>>>>> da708e9 (updated on ipay)
 }

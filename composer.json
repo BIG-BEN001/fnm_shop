@@ -21,8 +21,12 @@
         "phpoffice/phpspreadsheet": "^1.20",
         "razorpay/razorpay": "^2.8",
         "stripe/stripe-php": "^7.97",
+<<<<<<< HEAD
         "yajra/laravel-datatables-oracle": "~9.0",
         "zgabievi/laravel-ipay": "^0.2.4"
+=======
+        "yajra/laravel-datatables-oracle": "~9.0"
+>>>>>>> da708e9 (updated on ipay)
     },
     "require-dev": {
         "facade/ignition": "^2.5",

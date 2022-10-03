@@ -20,10 +20,17 @@
 $generated_hash = "";
 $fields = array();
 
+<<<<<<< HEAD
     $fields = array("live"=> "1",
                     "oid"=> "112",
                     "inv"=> "112020102292999",
                     "ttl"=> "900",
+=======
+    $fields = array("live"=> "0",
+                    "oid"=> "112",
+                    "inv"=> "112020102292999",
+                    "ttl"=> "1",
+>>>>>>> da708e9 (updated on ipay)
                     "tel"=> "254741112070",
                     "eml"=> "benjaminochieng99@gmail.com",
                     "vid"=> "demo",
@@ -44,7 +51,11 @@ $fields = array();
     // The datastring IS concatenated from the data above
     // */
     $datastring =  $fields['live'].$fields['oid'].$fields['inv'].$fields['ttl'].$fields['tel'].$fields['eml'].$fields['vid'].$fields['curr'].$fields['cbk'].$fields['cst'].$fields['crl'];
+<<<<<<< HEAD
     $hashkey ="edgecityk58d8e8dd";//use "demoCHANGED" for testing where vid is set to "demo"
+=======
+    $hashkey ="demoCHANGED";//use "demoCHANGED" for testing where vid is set to "demo"
+>>>>>>> da708e9 (updated on ipay)
 
     // /********************************************************************************************************
     // * Generating the HashString sample

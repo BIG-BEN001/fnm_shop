@@ -14,7 +14,11 @@ $gtax = getTax();
 	<meta property="og:description" content="{{ $gtext['og_description'] }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ url()->current() }}" />
+<<<<<<< HEAD
 	<meta property="og:image" content="{{ asset('media/'.$gtext['og_image']) }}" />
+=======
+	<meta property="og:image" content="{{ asset('public/media/'.$gtext['og_image']) }}" />
+>>>>>>> da708e9 (updated on ipay)
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -28,7 +32,11 @@ $gtax = getTax();
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $gtext['og_title'] }}">
 	<meta name="twitter:description" content="{{ $gtext['og_description'] }}">
+<<<<<<< HEAD
 	<meta name="twitter:image" content="{{ asset('media/'.$gtext['og_image']) }}">
+=======
+	<meta name="twitter:image" content="{{ asset('public/media/'.$gtext['og_image']) }}">
+>>>>>>> da708e9 (updated on ipay)
 @endsection
 
 @section('header')
@@ -107,5 +115,9 @@ $gtax = getTax();
 @endsection
 
 @push('scripts')
+<<<<<<< HEAD
 <script src="{{asset('frontend/pages/view_cart.js')}}"></script>
+=======
+<script src="{{asset('public/frontend/pages/view_cart.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush	

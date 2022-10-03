@@ -69,5 +69,9 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/theme_option_facebook.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/theme_option_facebook.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

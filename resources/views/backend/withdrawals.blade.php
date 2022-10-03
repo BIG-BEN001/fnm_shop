@@ -203,8 +203,15 @@ var TEXT = [];
 	TEXT['Do you really want to edit this record'] = "{{ __('Do you really want to edit this record') }}";
 	TEXT['Do you really want to delete this record'] = "{{ __('Do you really want to delete this record') }}";
 </script>
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{asset('backend/css/magnific-popup.css')}}" />
 <script src="{{asset('backend/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('backend/pages/withdrawals.js')}}"></script>
 <script src="{{asset('backend/pages/global-media.js')}}"></script>
+=======
+<link rel="stylesheet" href="{{asset('public/backend/css/magnific-popup.css')}}" />
+<script src="{{asset('public/backend/js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('public/backend/pages/withdrawals.js')}}"></script>
+<script src="{{asset('public/backend/pages/global-media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

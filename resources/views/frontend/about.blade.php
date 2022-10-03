@@ -63,20 +63,32 @@ $gtext = gtext();
                     {{-- <h5 class="fw-bold text-primary text-uppercase">About Us</h5> --}}
                     <h3 class="mb-0">Who We Are</h3>
                 </div>
+<<<<<<< HEAD
                 <p class="mb-4">F&M is a fashion house based in Nairobi, Kenya. We want our clients to get a complete transformation mind, body and spirit, through their interaction with us.
+=======
+                 <p class="mb-4">F&M is a fashion house based in Nairobi, Kenya. We want our clients to get a complete transformation mind, body and spirit, through their interaction with us.
+>>>>>>> da708e9 (updated on ipay)
                     We believe in every woman becoming everything that God created them to be inside and out.
                 <p>As of October 2021 we are a made in Kenya brand. We source our fabrics locally and have our production house in Nairobi where we design and tailor to perfection all our clothes.</p>                    
                     <p>Our clothes stand out for their uniqueness of design, the choice of print, the mix of fabrics, the edgy nature of every design and the JESUS in everything we do.
                     Our items are affordably priced, of unmatched quality and designed with love.
                     Made for the woman who values herself. She is all about self love and self growth.</p>
+<<<<<<< HEAD
                     <p>She is kind, She is full of grace, She knows her worth, She knows She is blessedÃ¢â‚¬Â¦<br>
+=======
+                    <p>She is kind, She is full of grace, She knows her worth, She knows She is blessed<br>
+>>>>>>> da708e9 (updated on ipay)
                     <b>SHE IS YOU.</b></p>
                 </p>
               
             </div>
             <div class="col-lg-6 page-div">
                 <div class="position-relative h-100">
+<<<<<<< HEAD
                     <img class="position-relative page-img w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{asset('frontend/images/banner6.jpg')}}">
+=======
+                    <img class="position-relative page-img w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{asset('public/frontend/images/banner6.jpg')}}">
+>>>>>>> da708e9 (updated on ipay)
                 </div>
             </div>
         </div>

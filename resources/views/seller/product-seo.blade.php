@@ -113,5 +113,9 @@ var TEXT = [];
 	TEXT['Sorry only you can upload jpg, png and gif file type'] = "{{ __('Sorry only you can upload jpg, png and gif file type') }}";
 
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/product_seo_seller.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/product_seo_seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

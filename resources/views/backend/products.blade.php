@@ -238,5 +238,9 @@ var TEXT = [];
 	TEXT['All Category'] = "{{ __('All Category') }}";
 	TEXT['All Brand'] = "{{ __('All Brand') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/products.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/products.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

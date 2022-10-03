@@ -11,7 +11,11 @@
 	<meta property="og:description" content="{{ $data->og_description }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ url()->current() }}" />
+<<<<<<< HEAD
 	<meta property="og:image" content="{{ asset('media/'.$data->og_image) }}" />
+=======
+	<meta property="og:image" content="{{ asset('public/media/'.$data->og_image) }}" />
+>>>>>>> da708e9 (updated on ipay)
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($gtext['fb_publish'] == 1)
@@ -25,7 +29,11 @@
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $data->og_title }}">
 	<meta name="twitter:description" content="{{ $data->og_description }}">
+<<<<<<< HEAD
 	<meta name="twitter:image" content="{{ asset('media/'.$data->og_image) }}">
+=======
+	<meta name="twitter:image" content="{{ asset('public/media/'.$data->og_image) }}">
+>>>>>>> da708e9 (updated on ipay)
 @endsection
 
 @section('header')
@@ -61,31 +69,51 @@
 	<div class="container">
 		<!-- Single Product -->
 		<div class="row">
+<<<<<<< HEAD
 			<div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mb25" >
+=======
+			<div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 mb25">
+>>>>>>> da708e9 (updated on ipay)
 				@if(count($pro_images)>0)
 				<div id="product_big" class="single-product-slider owl-carousel caro-single-product">
 					@foreach ($pro_images as $row)
 					<div class="item">
+<<<<<<< HEAD
 						<img src="{{ asset('media/'.$row->large_image) }}" alt=""/>
+=======
+						<img src="{{ asset('public/media/'.$row->large_image) }}" alt=""/>
+>>>>>>> da708e9 (updated on ipay)
 					</div>
 					@endforeach
 				</div>
 				<div id="product_thumbs" class="thumbnail-card owl-carousel">
 					@foreach ($pro_images as $row)
 					<div class="item">
+<<<<<<< HEAD
 						<img src="{{ asset('media/'.$row->thumbnail) }}" alt=""/>
+=======
+						<img src="{{ asset('public/media/'.$row->thumbnail) }}" alt=""/>
+>>>>>>> da708e9 (updated on ipay)
 					</div>
 					@endforeach
 				</div>
 				@else
 				<div id="product_big" class="single-product-slider owl-carousel caro-single-product">
 					<div class="item">
+<<<<<<< HEAD
 						<img src="{{ asset('media/'.$data->f_thumbnail) }}" alt=""/>
+=======
+						<img src="{{ asset('public/media/'.$data->f_thumbnail) }}" alt=""/>
+>>>>>>> da708e9 (updated on ipay)
 					</div>
 				</div>
 				<div id="product_thumbs" class="thumbnail-card owl-carousel">
 					<div class="item">
+<<<<<<< HEAD
 						<img src="{{ asset('media/'.$data->f_thumbnail) }}" alt=""/>
+=======
+						<img src="{{ asset('public/media/'.$data->f_thumbnail) }}" alt=""/>
+>>>>>>> da708e9 (updated on ipay)
 					</div>
 				</div>
 				@endif
@@ -107,13 +135,21 @@
 					<div class="pr_extra">{{ $data->short_desc }}</div>
 					@endif
 					
+<<<<<<< HEAD
 					{{-- @if($data->brandname != '')
+=======
+					@if($data->brandname != '')
+>>>>>>> da708e9 (updated on ipay)
 					<div class="pr_extra"><strong>{{ __('Brand') }}:</strong><a href="{{ route('frontend.brand', [$data->brand_id, str_slug($data->brandname)]) }}">  {{ $data->brandname }}</a></div>
 					@endif
 					
 					@if($data->shop_name != '')
 					<div class="pr_extra"><strong>{{ __('Sold By') }}:</strong><a href="{{ route('frontend.stores', [$data->seller_id, str_slug($data->shop_url)]) }}">  {{ $data->shop_name }}</a></div>
+<<<<<<< HEAD
 					@endif --}}
+=======
+					@endif
+>>>>>>> da708e9 (updated on ipay)
 					
 					@if($data->is_stock == 1)
 						@if($data->sku != '')
@@ -227,6 +263,10 @@
 							<div class="entry">
 								{!! $data->description !!}
 							</div>
+<<<<<<< HEAD
+=======
+							<img src="{{ asset('public/media/chart.jpg') }}" alt="">
+>>>>>>> da708e9 (updated on ipay)
 						</div>
 						<div id="des_reviews" class="tab-pane">
 							<div class="review-content">
@@ -330,6 +370,7 @@
 						  @endforeach
 						</ul>
 						@endif
+<<<<<<< HEAD
 						<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
 					</div>
 					<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
@@ -341,6 +382,19 @@
 							<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>
 						</div>
 					</div> --}}
+=======
+						<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('public/media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
+					</div>
+					<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
+					<!--<div class="brand-card">-->
+					<!--	<div class="brand">-->
+					<!--		<span>{{ __('Brand') }} <a href="{{ route('frontend.brand', [$row->brand_id, str_slug($row->brandname)]) }}">{{ str_limit($row->brandname) }}</a></span>-->
+					<!--	</div>-->
+					<!--	<div class="brand">-->
+					<!--		<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>-->
+					<!--	</div>-->
+					<!--</div>-->
+>>>>>>> da708e9 (updated on ipay)
 					<div class="item-price-card">
 						@if($row->sale_price != '')
 							@if($gtext['currency_position'] == 'left')
@@ -393,6 +447,7 @@
 						  @endforeach
 						</ul>
 						@endif
+<<<<<<< HEAD
 						<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
 					</div>
 					<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
@@ -404,6 +459,19 @@
 							<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>
 						</div>
 					</div> --}}
+=======
+						<a href="{{ route('frontend.product', [$row->id, $row->slug]) }}"><img src="{{ asset('public/media/'.$row->f_thumbnail) }}" alt="{{ $row->title }}" /></a>
+					</div>
+					<h4 class="item-title"><a href="{{ route('frontend.product', [$row->id, $row->slug]) }}">{{ str_limit($row->title) }}</a></h4>
+					<!--<div class="brand-card">-->
+					<!--	<div class="brand">-->
+					<!--		<span>{{ __('Brand') }} <a href="{{ route('frontend.brand', [$row->brand_id, str_slug($row->brandname)]) }}">{{ str_limit($row->brandname) }}</a></span>-->
+					<!--	</div>-->
+					<!--	<div class="brand">-->
+					<!--		<span>{{ __('Sold By') }} <a href="{{ route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]) }}">{{ str_limit($row->shop_name) }}</a></span>-->
+					<!--	</div>-->
+					<!--</div>-->
+>>>>>>> da708e9 (updated on ipay)
 					<div class="item-price-card">
 						@if($row->sale_price != '')
 							@if($gtext['currency_position'] == 'left')
@@ -456,5 +524,9 @@
 		is_size = 0;
 	}
 </script>
+<<<<<<< HEAD
 <script src="{{asset('frontend/pages/product.js')}}"></script>
+=======
+<script src="{{asset('public/frontend/pages/product.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

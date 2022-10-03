@@ -53,16 +53,28 @@
 	<!-- End Google Tag Manager -->	
 	@endif
 	<!--favicon-->
+<<<<<<< HEAD
 	<link rel="shortcut icon" href="{{ $gtext['favicon'] ? asset('media/'.$gtext['favicon']) : asset('backend/images/favicon.ico') }}" type="image/x-icon">
 	<link rel="icon" href="{{ $gtext['favicon'] ? asset('media/'.$gtext['favicon']) : asset('backend/images/favicon.ico') }}" type="image/x-icon">
+=======
+	<link rel="shortcut icon" href="{{ $gtext['favicon'] ? asset('public/media/'.$gtext['favicon']) : asset('public/backend/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ $gtext['favicon'] ? asset('public/media/'.$gtext['favicon']) : asset('public/backend/images/favicon.ico') }}" type="image/x-icon">
+>>>>>>> da708e9 (updated on ipay)
 	<!-- css -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	@if($gtext['is_rtl'] == 1)
+<<<<<<< HEAD
 	<link href="{{asset('frontend/css/bootstrap.rtl.min.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/rtl.css')}}" rel="stylesheet">
 	@else
 	<link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+=======
+	<link href="{{asset('public/frontend/css/bootstrap.rtl.min.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/rtl.css')}}" rel="stylesheet">
+	@else
+	<link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+>>>>>>> da708e9 (updated on ipay)
 	@endif
 	<style type="text/css">
 	:root {
@@ -70,12 +82,21 @@
 	  --menu-background-color: {{ $gtext['menu_background_color'] }};
 	}
 	</style>
+<<<<<<< HEAD
 	<link href="{{asset('frontend/css/bootstrap-icons.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/owl.carousel.min.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/jquery.gritter.min.css')}}" rel="stylesheet">
 
 	<link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
+=======
+	<link href="{{asset('public/frontend/css/bootstrap-icons.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/owl.carousel.min.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/jquery.gritter.min.css')}}" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/style.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/responsive.css')}}" rel="stylesheet">
+>>>>>>> da708e9 (updated on ipay)
 	@stack('style')
 	@if($gtext['custom_css'] != '')
 	<style type="text/css">
@@ -110,6 +131,7 @@
 	@include('frontend.partials.footer')
 	
 	<!-- js -->
+<<<<<<< HEAD
 	<script src="{{asset('frontend/js/jquery-3.6.0.min.js')}}"></script>
 	<script src="{{asset('frontend/js/popper.min.js')}}"></script>
 	<script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
@@ -118,6 +140,17 @@
 	<script src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
 	<script src="{{asset('frontend/js/jquery.popupoverlay.min.js')}}"></script>
 	<script src="{{asset('frontend/js/jquery.gritter.min.js')}}"></script>
+=======
+	<script src="{{asset('public/frontend/js/jquery-3.6.0.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/popper.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/scrolltop.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.nicescroll.min.js')}}"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="{{asset('public/frontend/js/owl.carousel.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.popupoverlay.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.gritter.min.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 	<script>
 		var is_rtl = "{{ $gtext['is_rtl'] }}";
 		if(is_rtl == 1){
@@ -129,8 +162,13 @@
 		var base_url = "{{ url('/') }}";
 		var public_path = "{{ asset('public') }}";
 	</script>
+<<<<<<< HEAD
 	<script src="{{asset('frontend/js/scripts.js')}}"></script>
 	<script src="{{asset('frontend/pages/cart.js')}}"></script>
+=======
+	<script src="{{asset('public/frontend/js/scripts.js')}}"></script>
+	<script src="{{asset('public/frontend/pages/cart.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 		<div class="custom-popup light width-100 dnone" id="lightCustomModal">
 		<div class="padding-md">
 			<h4 class="m-top-none"></h4>

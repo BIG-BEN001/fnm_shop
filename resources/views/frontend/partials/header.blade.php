@@ -67,7 +67,11 @@
 					</ul>
 					<div class="navbar-logo">
 						<a href="{{ url('/') }}">
+<<<<<<< HEAD
 							<img src="{{ $gtext['front_logo'] ? asset('media/'.$gtext['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo">
+=======
+							<img src="{{ $gtext['front_logo'] ? asset('public/media/'.$gtext['front_logo']) : asset('public/frontend/images/logo.png') }}" alt="logo">
+>>>>>>> da708e9 (updated on ipay)
 						</a>
 					</div>
 					<div class="header-search">
@@ -99,6 +103,7 @@
 	<div class="header-menu">
 		<div class="container">
 			<div class="row">
+<<<<<<< HEAD
 				{{-- <div class="col-lg-3">
 					<div class="categories_wrap">
 						<div class="banner-cate-heading">
@@ -112,6 +117,21 @@
 					</div>
 				</div> --}}
 				<div class="col-lg-12 ">
+=======
+				<!--<div class="col-lg-3">-->
+				<!--	<div class="categories_wrap">-->
+				<!--		<div class="banner-cate-heading">-->
+				<!--			<i class="bi bi-list"></i>{{ __('Top Categories') }}-->
+				<!--		</div>-->
+				<!--		<div class="nav_cat_content">-->
+				<!--			<ul class="banner-category-list">-->
+				<!--				@php echo CategoryMenuList(); @endphp-->
+				<!--			</ul>-->
+				<!--		</div>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<div class="col-lg">
+>>>>>>> da708e9 (updated on ipay)
 					<div class="tp-mega-full">
 						<div class="tp-menu d-flex justify-content-center text-center">
 							<nav>
@@ -142,7 +162,11 @@
 			<div class="mobile-navigation">
 				<nav>
 					<ul class="mobile-menu">
+<<<<<<< HEAD
 						<li class="has-children-menu"><a href="#">{{ __('Top Categories') }}</a>
+=======
+						<li class="has-children-menu"><a href="#">{{ __('All Categories') }}</a>
+>>>>>>> da708e9 (updated on ipay)
 							<ul class="dropdown">
 								@php echo CategoryMenuList(); @endphp
 							</ul>

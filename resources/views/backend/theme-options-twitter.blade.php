@@ -70,5 +70,9 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/theme_option_twitter.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/theme_option_twitter.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

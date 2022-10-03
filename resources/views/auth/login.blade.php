@@ -13,7 +13,11 @@
 				<div class="loginsignup text-center">
 					<div class="logo">
 						<a href="{{ url('/login') }}">
+<<<<<<< HEAD
 							<img src="{{ $gtext['back_logo'] ? asset('media/'.$gtext['back_logo']) : asset('backend/images/backend-logo.png') }}" alt="logo">
+=======
+							<img src="{{ $gtext['back_logo'] ? asset('public/media/'.$gtext['back_logo']) : asset('public/backend/images/backend-logo.png') }}" alt="logo">
+>>>>>>> da708e9 (updated on ipay)
 						</a>
 					</div>
 					@if (session('message'))

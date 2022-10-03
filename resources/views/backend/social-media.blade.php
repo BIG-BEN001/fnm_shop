@@ -127,7 +127,11 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{asset('backend/css/bootstrap-icons.css')}}">
+=======
+<link rel="stylesheet" href="{{asset('public/backend/css/bootstrap-icons.css')}}">
+>>>>>>> da708e9 (updated on ipay)
 <!-- css/js -->
 <script type="text/javascript">
 var TEXT = [];
@@ -139,5 +143,9 @@ var TEXT = [];
 	TEXT['Please select action'] = "{{ __('Please select action') }}";
 	TEXT['Please select record'] = "{{ __('Please select record') }}";
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/social_media.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/social_media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

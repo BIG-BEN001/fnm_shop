@@ -47,5 +47,9 @@
 @endsection
 
 @push('scripts')
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/custom-css.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/custom-css.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

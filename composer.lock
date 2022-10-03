@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "3df0eda5ac49abd13492778c86706799",
+=======
+    "content-hash": "c900d2d513e5276b0fee58a6ea43fbf3",
+>>>>>>> da708e9 (updated on ipay)
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -63,6 +67,7 @@
             "time": "2021-03-11T06:42:03+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "bensampo/laravel-enum",
             "version": "v3.4.2",
             "source": {
@@ -146,6 +151,8 @@
             "time": "2021-09-09T17:27:58+00:00"
         },
         {
+=======
+>>>>>>> da708e9 (updated on ipay)
             "name": "brick/math",
             "version": "0.9.2",
             "source": {
@@ -1234,6 +1241,7 @@
             "time": "2021-03-21T16:25:00+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "hanneskod/classtools",
             "version": "1.2.1",
             "source": {
@@ -1283,6 +1291,8 @@
             "time": "2020-03-05T20:41:28+00:00"
         },
         {
+=======
+>>>>>>> da708e9 (updated on ipay)
             "name": "intervention/image",
             "version": "2.5.1",
             "source": {
@@ -1357,6 +1367,7 @@
             "time": "2019-11-02T09:15:47+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laminas/laminas-code",
             "version": "3.5.1",
             "source": {
@@ -1554,6 +1565,8 @@
             "time": "2022-07-29T13:28:29+00:00"
         },
         {
+=======
+>>>>>>> da708e9 (updated on ipay)
             "name": "laravel/framework",
             "version": "v8.34.0",
             "source": {
@@ -6665,6 +6678,7 @@
                 }
             ],
             "time": "2021-03-23T01:32:51+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "zgabievi/laravel-ipay",
@@ -6719,6 +6733,8 @@
                 "source": "https://github.com/zgabievi/laravel-ipay/tree/0.2.4"
             },
             "time": "2021-07-30T06:44:56+00:00"
+=======
+>>>>>>> da708e9 (updated on ipay)
         }
     ],
     "packages-dev": [

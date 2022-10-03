@@ -120,6 +120,11 @@ if(og_image != ''){
 	$("#view_og_image").html('<img src="'+public_path+'/media/'+og_image+'">');
 }
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/theme_option_seo.js')}}"></script>
 <script src="{{asset('backend/pages/global-media.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/theme_option_seo.js')}}"></script>
+<script src="{{asset('public/backend/pages/global-media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

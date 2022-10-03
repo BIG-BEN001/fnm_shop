@@ -17,7 +17,11 @@
 				</div>
 				<div class="col-lg-6">
 					<ul class="top-list">
+<<<<<<< HEAD
 						<li><a href="{{ route('frontend.order-tracking') }}"><i class="bi bi-geo"></i>{{ __('Order Tracking') }}</a></li>
+=======
+						<li><a href="{{ route('frontend.order-tracking') }}"><i class="bi bi-geo"></i>{{ __('Track Your Orders') }}</a></li>
+>>>>>>> da708e9 (updated on ipay)
 						@if (Route::has('login'))
 						@auth
 						<li>
@@ -67,7 +71,11 @@
 					</ul>
 					<div class="navbar-logo">
 						<a href="{{ url('/') }}">
+<<<<<<< HEAD
 							<img src="{{ $gtext['front_logo'] ? asset('media/'.$gtext['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo">
+=======
+							<img src="{{ $gtext['front_logo'] ? asset('public/media/'.$gtext['front_logo']) : asset('public/frontend/images/logo.png') }}" alt="logo">
+>>>>>>> da708e9 (updated on ipay)
 						</a>
 					</div>
 					<div class="header-search">
@@ -130,7 +138,11 @@
 			<div class="mobile-navigation">
 				<nav>
 					<ul class="mobile-menu">
+<<<<<<< HEAD
 						<li class="has-children-menu"><a href="#">{{ __('Top Categories') }}</a>
+=======
+						<li class="has-children-menu"><a href="#">{{ __('All Categories') }}</a>
+>>>>>>> da708e9 (updated on ipay)
 							<ul class="dropdown">
 								@php echo CategoryMenuList(); @endphp
 							</ul>

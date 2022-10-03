@@ -96,5 +96,9 @@ if(colors !=''){
 }
 
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/variations_seller.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/variations_seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

@@ -17,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+<<<<<<< HEAD
 Route::get('ipay', [PaymentController::class,'index']);
+=======
+>>>>>>> da708e9 (updated on ipay)

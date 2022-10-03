@@ -82,9 +82,15 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{asset('backend/bootstrap-datetimepicker/bootstrap-fonticon.css')}}">
 <link rel="stylesheet" href="{{asset('backend/bootstrap-datetimepicker/bootstrap-datetimepicker.css')}}">
 <script src="{{asset('backend/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+=======
+<link rel="stylesheet" href="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-fonticon.css')}}">
+<link rel="stylesheet" href="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-datetimepicker.css')}}">
+<script src="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 <script type="text/javascript">
 var TEXT = [];
 	TEXT['Do you really want to delete this record'] = "{{ __('Do you really want to delete this record') }}";
@@ -107,5 +113,9 @@ $(function () {
 	});
 });
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/orders.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/orders.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

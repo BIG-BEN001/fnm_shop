@@ -131,6 +131,11 @@ if(back_logo != ''){
 }
 
 </script>
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/theme-options.js')}}"></script>
 <script src="{{asset('backend/pages/global-media.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/theme-options.js')}}"></script>
+<script src="{{asset('public/backend/pages/global-media.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

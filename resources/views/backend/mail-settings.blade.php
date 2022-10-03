@@ -101,5 +101,9 @@
 @endsection
 
 @push('scripts')
+<<<<<<< HEAD
 <script src="{{asset('backend/pages/mail-setting.js')}}"></script>
+=======
+<script src="{{asset('public/backend/pages/mail-setting.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

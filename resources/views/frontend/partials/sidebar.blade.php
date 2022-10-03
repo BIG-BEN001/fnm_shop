@@ -7,6 +7,7 @@
 			</ul>
 		</div>
 	</div>
+<<<<<<< HEAD
 	{{-- <div class="widget mb40">
 		<h5 class="widget-title">{{ __('Filter by Brand') }}</h5>
 		<div class="checkboxlist">
@@ -15,6 +16,16 @@
 			</ul>
 		</div>
 	</div> --}}
+=======
+	<!--<div class="widget mb40">-->
+	<!--	<h5 class="widget-title">{{ __('Filter by Brand') }}</h5>-->
+	<!--	<div class="checkboxlist">-->
+	<!--		<ul class="checkbox-list">-->
+	<!--			@php echo BrandListForFilter(); @endphp-->
+	<!--		</ul>-->
+	<!--	</div>-->
+	<!--</div>-->
+>>>>>>> da708e9 (updated on ipay)
 	<div class="widget mb40">
 		<h5 class="widget-title">{{ __('Filter by Color') }}</h5>
 		<ul class="widget-color">

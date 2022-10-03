@@ -87,8 +87,15 @@
 
 @push('scripts')
 <!-- css/js -->
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{asset('backend/bootstrap-datetimepicker/bootstrap-fonticon.css')}}">
 <link rel="stylesheet" href="{{asset('backend/bootstrap-datetimepicker/bootstrap-datetimepicker.css')}}">
 <script src="{{asset('backend/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
 <script src="{{asset('backend/pages/price_seller.js')}}"></script>
+=======
+<link rel="stylesheet" href="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-fonticon.css')}}">
+<link rel="stylesheet" href="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-datetimepicker.css')}}">
+<script src="{{asset('public/backend/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+<script src="{{asset('public/backend/pages/price_seller.js')}}"></script>
+>>>>>>> da708e9 (updated on ipay)
 @endpush

@@ -68,16 +68,28 @@ class HomeFrontendController extends Controller
 		
 		//Brand
 		$brand = Brand::where('is_publish', '=', 1)->where('is_featured', '=', 1)->where('lan', '=', $lan)->orderBy('id', 'desc')->get();
+<<<<<<< HEAD
 
 		//6 = ads
 		$ads_sql = "SELECT a.id, a.brand_id, a.title, a.slug, a.f_thumbnail, a.sale_price, a.old_price, a.start_date, a.end_date, a.variation_color, a.variation_size, b.title labelname, b.color labelcolor, c.name brandname, d.shop_name, d.id seller_id, d.shop_url
+=======
+		
+		
+		//6 = Cards
+		$cards_sql = "SELECT a.id, a.brand_id, a.title, a.slug, a.f_thumbnail, a.sale_price, a.old_price, a.start_date, a.end_date, a.variation_color, a.variation_size, b.title labelname, b.color labelcolor, c.name brandname, d.shop_name, d.id seller_id, d.shop_url
+>>>>>>> da708e9 (updated on ipay)
 			FROM products a
 			LEFT JOIN labels b ON a.label_id = b.id
 			LEFT JOIN brands c ON a.brand_id = c.id
 			INNER JOIN users d ON a.user_id = d.id AND d.status_id = 1
 			WHERE a.collection_id = 7 AND a.lan = '".$lan."' AND a.is_publish = 1 AND a.is_featured = 1 ORDER BY a.id DESC LIMIT 20;";
+<<<<<<< HEAD
 		$ads = DB::select(DB::raw($ads_sql));
 
+=======
+		$cards = DB::select(DB::raw($cards_sql));
+		
+>>>>>>> da708e9 (updated on ipay)
 		//5 = Gift Cards
 		$gc_sql = "SELECT a.id, a.brand_id, a.title, a.slug, a.f_thumbnail, a.sale_price, a.old_price, a.start_date, a.end_date, a.variation_color, a.variation_size, b.title labelname, b.color labelcolor, c.name brandname, d.shop_name, d.id seller_id, d.shop_url
 			FROM products a
@@ -86,7 +98,11 @@ class HomeFrontendController extends Controller
 			INNER JOIN users d ON a.user_id = d.id AND d.status_id = 1
 			WHERE a.collection_id = 6 AND a.lan = '".$lan."' AND a.is_publish = 1 AND a.is_featured = 1 ORDER BY a.id DESC LIMIT 20;";
 		$gift_cards = DB::select(DB::raw($gc_sql));
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> da708e9 (updated on ipay)
 		//4 = New Arrivals
 		$na_sql = "SELECT a.id, a.brand_id, a.title, a.slug, a.f_thumbnail, a.sale_price, a.old_price, a.start_date, a.end_date, a.variation_color, a.variation_size, b.title labelname, b.color labelcolor, c.name brandname, d.shop_name, d.id seller_id, d.shop_url
 			FROM products a
@@ -169,7 +185,11 @@ class HomeFrontendController extends Controller
 			$trending_data['is_publish'] = '2';
 		}
 		
+<<<<<<< HEAD
         return view('frontend.home', compact('slider', 'position_1', 'position_2', 'position_3', 'position_4', 'position_5', 'brand', 'new_arrivals', 'trending_products', 'best_sellers', 'available_offer', 'trending_data', 'gift_cards', 'ads'));
+=======
+        return view('frontend.home', compact('slider', 'position_1', 'position_2', 'position_3', 'position_4', 'position_5', 'brand', 'new_arrivals', 'trending_products', 'best_sellers', 'available_offer', 'trending_data', 'gift_cards', 'cards'));
+>>>>>>> da708e9 (updated on ipay)
     }
 	
 	//Get data for New Arrivals

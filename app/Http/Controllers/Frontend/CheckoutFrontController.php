@@ -80,8 +80,13 @@ class CheckoutFrontController extends Controller
 	
     public function LoadMakeOrder(Request $request)
     {
+<<<<<<< HEAD
 
 		$this->validate($request,[
+=======
+		
+	    $this->validate($request,[
+>>>>>>> da708e9 (updated on ipay)
 			'name' => 'required',
 			'phone' => 'required',
 			'country' => 'required',
@@ -92,9 +97,14 @@ class CheckoutFrontController extends Controller
 			// 'payment_method' => 'required',
 			'shipping_method' => 'required',
 			'email' => 'required|email|unique:users',
+<<<<<<< HEAD
 			'password' => 'required|confirmed',
         ]);
 
+=======
+// 			'password' => 'required|confirmed',
+        ]);
+>>>>>>> da708e9 (updated on ipay)
 		
 
 		$res = array();
@@ -126,6 +136,7 @@ class CheckoutFrontController extends Controller
 
 		if($new_account == 1){
 			
+<<<<<<< HEAD
 			$this->validate($request,[
 				'name' => 'required',
 				'phone' => 'required',
@@ -139,6 +150,21 @@ class CheckoutFrontController extends Controller
 				'email' => 'required|email|unique:users',
 				'password' => 'required|confirmed',
 			]);
+=======
+    		$this->validate($request,[
+    			'name' => 'required',
+    			'phone' => 'required',
+    			'country' => 'required',
+    			// 'state' => 'required',
+    			// 'zip_code' => 'required',
+    			'city' => 'required',
+    			'address' => 'required',
+    			// 'payment_method' => 'required',
+    			'shipping_method' => 'required',
+    			'email' => 'required|email',
+    			'password' => 'required|confirmed',
+            ]);
+>>>>>>> da708e9 (updated on ipay)
 
 			$userData = array(
 				'name' => $request->input('name'),
@@ -159,6 +185,7 @@ class CheckoutFrontController extends Controller
 		}else{
 			
 			$this->validate($request,[
+<<<<<<< HEAD
 				'name' => 'required',
 				'phone' => 'required',
 				'country' => 'required',
@@ -171,6 +198,20 @@ class CheckoutFrontController extends Controller
 				'email' => 'required|email|unique:users',
 				'password' => 'required|confirmed',
 			]);
+=======
+    			'name' => 'required',
+    			'phone' => 'required',
+    			'country' => 'required',
+    			// 'state' => 'required',
+    			// 'zip_code' => 'required',
+    			'city' => 'required',
+    			'address' => 'required',
+    			// 'payment_method' => 'required',
+    			'shipping_method' => 'required',
+    			'email' => 'required|email',
+    // 			'password' => 'required|confirmed',
+            ]);
+>>>>>>> da708e9 (updated on ipay)
 
 			$customer_id = $request->input('customer_id');
 		}
@@ -298,10 +339,18 @@ class CheckoutFrontController extends Controller
 				$fields = array();
 
 				$fields = array(
+<<<<<<< HEAD
 					"live"=> "0",
 					"oid"=> "$order_no",
 					"inv"=> "123456789",
 					"ttl"=> "1",
+=======
+					"live"=> "1",
+					"oid"=> "$order_no",
+					"inv"=> "123456789",
+					"ttl"=> "$totalAmount",
+				    // "ttl"=> "1",
+>>>>>>> da708e9 (updated on ipay)
 					"tel"=> "$request->phone",
 					"eml"=> "$request->email",
 					"vid"=> "fnmbrand",
@@ -339,6 +388,7 @@ class CheckoutFrontController extends Controller
 			return response()->json($res);
 		}else{
 			$res['msgType'] = 'error';
+<<<<<<< HEAD
 			$res['msg'] = __('Oops! Your order is failed. Please try again.');
 			return response()->json($res);
 		}
@@ -355,6 +405,24 @@ class CheckoutFrontController extends Controller
         // Session::forget('paypal_payment_id');
         // dd($request->all());
         // return view('ipay');
+=======
+			$res['msg'] = __('Oops! Your order failed. Please try again.');
+			return response()->json($res);
+		}
+    }
+    
+    
+	public function ipay_callback(Request $request)
+    {
+        	$gtext = gtext();
+        // dd($request->all());
+       	$order_master_ids = Session::get('order_master_ids');
+        // $payment_id = Session::get('paypal_payment_id');
+// dd($order_master_ids);
+        Session::forget('order_master_ids');
+        // Session::forget('paypal_payment_id');
+        
+>>>>>>> da708e9 (updated on ipay)
 		$val = "fnmbrand"; //assigned iPay Vendor ID... hard code it here.
 		/*
 		these values below are picked from the incoming URL and assigned to variables that we
@@ -373,7 +441,11 @@ class CheckoutFrontController extends Controller
 		$fp = fopen($ipnurl, "rb");
 		$status = stream_get_contents($fp, -1, -1);
 
+<<<<<<< HEAD
 		// dd($status);
+=======
+// 		dd($status);
+>>>>>>> da708e9 (updated on ipay)
 		fclose($fp);
 		//the value of the parameter “vendor”, in the url being opened above, is your iPay assigned
 		// Vendor ID.
@@ -382,7 +454,11 @@ class CheckoutFrontController extends Controller
 
 		//continue your shopping cart update routine code here below....
 		//then redirect to to the customer notification page here...
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> da708e9 (updated on ipay)
 		$payment_status = $request->status;
 		$payment_channel = $request->channel;
 		$transaction_code = $request->txncd;
@@ -409,10 +485,19 @@ class CheckoutFrontController extends Controller
 			
             return Redirect::route('frontend.thank');
         }
+<<<<<<< HEAD
         return Redirect::to('/thank');
     }
 
 
+=======
+        
+        
+        // return Redirect::to('/thank');
+    }
+
+	
+>>>>>>> da708e9 (updated on ipay)
     public function getPaypalPaymentStatus(Request $request)
     {   
 		$gtext = gtext();
@@ -472,9 +557,13 @@ class CheckoutFrontController extends Controller
 				'a.seller_id', 
 				'a.payment_status_id', 
 				'a.order_status_id', 
+<<<<<<< HEAD
 				'a.order_no',
 				'a.transaction_no',
 				'a.payment_channel', 
+=======
+				'a.order_no', 
+>>>>>>> da708e9 (updated on ipay)
 				'a.created_at', 
 				'a.shipping_title', 
 				'a.shipping_fee',
@@ -518,7 +607,10 @@ class CheckoutFrontController extends Controller
 			if($index == 0){
 				$mdata['payment_status_id'] = $row->payment_status_id;
 				$mdata['order_status_id'] = $row->order_status_id;
+<<<<<<< HEAD
 				$mdata['payment_channel'] = $row->payment_channel;
+=======
+>>>>>>> da708e9 (updated on ipay)
 				$mdata['customer_name'] = $row->customer_name;
 				$mdata['customer_email'] = $row->customer_email;
 				$mdata['customer_address'] = $row->customer_address;
@@ -569,7 +661,11 @@ class CheckoutFrontController extends Controller
 				$orderDataArr[$row->seller_id]['shop_name'] = $row->shop_name;
 				
 				$item_list .= '<tr>
+<<<<<<< HEAD
 								<td colspan="3" style="width:100%;text-align:left;border:1px solid #ddd;background-color:#f7f7f7;font-weight:bold;">'.__('Sold By').': <a href="'.route('frontend.stores', [$row->seller_id, str_slug($row->shop_url)]).'"> '.$row->shop_name.'</a>, '.__('Order#').': <a href="'.route('frontend.order-invoice', [$row->id, $row->order_no]).'"> '.$row->order_no.'</a></td>
+=======
+								<td colspan="3" style="width:100%;text-align:left;border:1px solid #ddd;background-color:#f7f7f7;font-weight:bold;">'.__('Order#').': <a href="'.route('frontend.order-invoice', [$row->id, $row->order_no]).'"> '.$row->order_no.'</a></td>
+>>>>>>> da708e9 (updated on ipay)
 							</tr>';
 
 				$tempSellerId=$row->seller_id; 
@@ -649,6 +745,7 @@ class CheckoutFrontController extends Controller
 
 				require 'vendor/autoload.php';
 				$mail = new PHPMailer(true);
+<<<<<<< HEAD
 				$mail->CharSet = "UTF-8";
 
 				if($gtext['mailer'] == 'smtp'){
@@ -672,6 +769,33 @@ class CheckoutFrontController extends Controller
 				$mail->isHTML(true);
 				$mail->CharSet = "utf-8";
 				$mail->Subject = $orderNos.' - '. __('Your order is successfully.');
+=======
+				// $mail->CharSet = "UTF-8";
+                    $mail->SMTPDebug = 0;                      
+                    $mail->isSMTP(); 
+			        $mail->Mailer = "smtp";                                        
+                    $mail->Host = 'mail.fikasystems.com';                    
+                    $mail->SMTPAuth   = true;  
+                    $mail->SMTPOptions = array(
+                        'ssl' => array(
+                            'verify_peer' => false,
+                            'verify_peer_name' => false,
+                            'allow_self_signed' => true
+                        )
+                    );                                 
+                    $mail->Username = 'bochieng@fikasystems.com';
+                    $mail->Password = 'Sh@2@m#1397';
+                    $mail->SMTPSecure = 'ssl';
+                    $mail->Port = 465; 
+				
+
+				//Get mail
+				$mail->setFrom('info@fnmbrand.com','F&M Brand');
+				$mail->addAddress($mdata['customer_email'], $mdata['customer_name']);
+				$mail->isHTML(true);
+				// $mail->CharSet = "utf-8";
+				$mail->Subject = $orderNos.' - '. __('Your order is successful.');
+>>>>>>> da708e9 (updated on ipay)
 				
 				$mail->Body = '<table style="background-color:#edf2f7;color:#111111;padding:40px 0px;line-height:24px;font-size:14px;" border="0" cellpadding="0" cellspacing="0" width="100%">	
 								<tr>
@@ -705,7 +829,11 @@ class CheckoutFrontController extends Controller
 																<table style="text-align:right;" border="0" cellpadding="3" cellspacing="0" width="100%">
 																	<tr><td><strong>'.__('Order Date').'</strong>: '.date('d-m-Y', strtotime($mdata['created_at'])).'</td></tr>
 																	<tr><td><strong>'.__('Payment Method').'</strong>: '.$mdata['method_name'].'</td></tr>
+<<<<<<< HEAD
 																	<tr><td><strong>'.__('Payment Status').'</strong>: <span style="color:'.$pstatus.'">'.$mdata['pstatus_name'].'</span></td></tr>
+=======
+																
+>>>>>>> da708e9 (updated on ipay)
 																	<tr><td><strong>'.__('Order Status').'</strong>: <span style="color:'.$ostatus.'">'.$mdata['ostatus_name'].'</span></td></tr>
 																</table>
 															</td>

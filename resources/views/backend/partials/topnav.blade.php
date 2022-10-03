@@ -10,7 +10,11 @@
 	<div class="dropdown ml-auto mt-0 mt-lg-0">
 		<a href="javascript:void(0);" class="my-profile-info" data-toggle="dropdown">
 			<div class="avatar">
+<<<<<<< HEAD
 				<img src="{{ Auth::user()->photo ? asset('media/'.Auth::user()->photo) : asset('backend/images/avatar.png') }}">
+=======
+				<img src="{{ Auth::user()->photo ? asset('public/media/'.Auth::user()->photo) : asset('public/backend/images/avatar.png') }}">
+>>>>>>> da708e9 (updated on ipay)
 			</div>
 			<div class="my-profile">
 				<span>{{ Auth::user()->name }}</span>
